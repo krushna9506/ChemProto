@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Soap Formation – Laboratory Prototyping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Canvas Background -->
+    <canvas id="backgroundCanvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">ChemLab</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#theory">Theory</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text">Liquid Soap Formation</span>
+            </h1>
+            <p class="hero-subtitle fade-in">Laboratory Prototyping & Chemical Innovation</p>
+            <div class="hero-cta">
+                <button class="cta-button">Explore Research</button>
+            </div>
+        </div>
+        
+        <!-- Animated SVG Molecule -->
+        <div class="molecule-container">
+            <svg class="molecule-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Atoms -->
+                <circle class="atom atom-1" cx="50" cy="50" r="8" fill="none" stroke="cyan" stroke-width="2"/>
+                <circle class="atom atom-2" cx="150" cy="50" r="10" fill="none" stroke="#00ff88" stroke-width="2"/>
+                <circle class="atom atom-3" cx="100" cy="120" r="6" fill="none" stroke="#0088ff" stroke-width="2"/>
+                <circle class="atom atom-4" cx="50" cy="150" r="8" fill="none" stroke="cyan" stroke-width="2"/>
+                <circle class="atom atom-5" cx="150" cy="150" r="7" fill="none" stroke="#00ff88" stroke-width="2"/>
+                
+                <!-- Bonds -->
+                <line class="bond bond-1" x1="50" y1="50" x2="150" y2="50" stroke="rgba(0,255,136,0.6)" stroke-width="1"/>
+                <line class="bond bond-2" x1="150" y1="50" x2="100" y2="120" stroke="rgba(0,136,255,0.6)" stroke-width="1"/>
+                <line class="bond bond-3" x1="100" y1="120" x2="50" y2="150" stroke="rgba(0,255,255,0.6)" stroke-width="1"/>
+                <line class="bond bond-4" x1="50" y1="150" x2="150" y2="150" stroke="rgba(0,255,136,0.6)" stroke-width="1"/>
+                <line class="bond bond-5" x1="50" y1="50" x2="100" y2="120" stroke="rgba(0,136,255,0.6)" stroke-width="1"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="cards-grid">
+                <div class="glass-card">
+                    <div class="card-icon">🧪</div>
+                    <h3>Problem Statement</h3>
+                    <p>Traditional soap manufacturing processes lack efficiency and environmental sustainability. Our research focuses on optimizing liquid soap formation through controlled laboratory prototyping.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Aim & Objectives</h3>
+                    <p>To develop an efficient liquid soap formation process using potassium hydroxide saponification, analyzing optimal conditions for industrial scalability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theory Section -->
+    <section id="theory" class="section">
+        <div class="container">
+            <h2 class="section-title">Chemical Theory</h2>
+            <div class="theory-content">
+                <div class="glass-card theory-card">
+                    <h3>Saponification Process</h3>
+                    <p>Saponification is the chemical reaction between fats/oils and a strong alkali (KOH) to produce soap and glycerol. The reaction follows:</p>
+                    <div class="chemical-equation">
+                        <span>Fat/Oil + KOH → Soap + Glycerol</span>
+                    </div>
+                </div>
+                <div class="glass-card theory-card">
+                    <h3>Potassium Hydroxide Role</h3>
+                    <p>KOH acts as the saponifying agent, breaking ester bonds in triglycerides and forming potassium salts of fatty acids (liquid soap).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="section">
+        <div class="container">
+            <h2 class="section-title">Materials & Equipment</h2>
+            <div class="materials-grid">
+                <div class="glass-card material-card">
+                    <div class="material-icon">🛢️</div>
+                    <h4>Vegetable Oil</h4>
+                    <p>Primary fat source for saponification</p>
+                </div>
+                <div class="glass-card material-card">
+                    <div class="material-icon">⚗️</div>
+                    <h4>Potassium Hydroxide</h4>
+                    <p>Strong alkali for soap formation</p>
+                </div>
+                <div class="glass-card material-card">
+                    <div class="material-icon">🌡️</div>
+                    <h4>Temperature Control</h4>
+                    <p>Heating and cooling systems</p>
+                </div>
+                <div class="glass-card material-card">
+                    <div class="material-icon">⚖️</div>
+                    <h4>pH Meter</h4>
+                    <p>Quality control measurement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Process Flow Section -->
+    <section id="process" class="section">
+        <div class="container">
+            <h2 class="section-title">Process Flow Diagram</h2>
+            <div class="process-flow">
+                <div class="flow-step" data-step="1">
+                    <div class="tank oil-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">Oil Storage</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-step" data-step="2">
+                    <div class="tank koh-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">KOH Tank</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-step" data-step="3">
+                    <div class="tank mixing-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">Mixing Tank</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-step" data-step="4">
+                    <div class="tank gel-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">Gel Tank</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-step" data-step="5">
+                    <div class="tank dilution-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">Dilution Tank</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-step" data-step="6">
+                    <div class="tank ph-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">pH Tank</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-step" data-step="7">
+                    <div class="tank storage-tank">
+                        <div class="tank-content"></div>
+                        <span class="tank-label">Final Storage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedure Section -->
+    <section id="procedure" class="section">
+        <div class="container">
+            <h2 class="section-title">Laboratory Procedure</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4>Oil Preparation</h4>
+                        <p>Heat vegetable oil to 60°C in the oil storage tank</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4>KOH Solution</h4>
+                        <p>Prepare 30% KOH solution in distilled water</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4>Mixing Process</h4>
+                        <p>Slowly add KOH solution to heated oil with continuous stirring</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4>Gel Formation</h4>
+                        <p>Allow mixture to form gel consistency (30-45 minutes)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h4>Dilution</h4>
+                        <p>Add hot water gradually to achieve desired consistency</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">6</div>
+                    <div class="timeline-content">
+                        <h4>pH Adjustment</h4>
+                        <p>Test and adjust pH to 9-10 using citric acid if needed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiment Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Experimental Work & Lab Evidence</h2>
+            <p class="gallery-subtitle">Visual documentation of our liquid soap formation process</p>
+            
+            <div class="gallery-grid">
+                <!-- Video Item -->
+                <div class="gallery-item video-item" data-type="video">
+                    <div class="media-container">
+                        <video class="gallery-video" muted loop preload="metadata">
+                            <source src="img/WhatsApp Video 2026-01-22 at 10.10.29 AM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-overlay">
+                            <div class="play-button">▶</div>
+                        </div>
+                        <div class="media-type-badge">VIDEO</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Saponification Process</h4>
+                        <p>Real-time mixing of KOH solution with vegetable oil</p>
+                    </div>
+                </div>
+
+                <!-- Image Item 1 -->
+                <div class="gallery-item image-item" data-type="image">
+                    <div class="media-container">
+                        <img class="gallery-image" src="img/1.jpeg" alt="Laboratory Setup" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="zoom-icon">🔍</div>
+                        </div>
+                        <div class="media-type-badge">IMAGE</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Laboratory Setup</h4>
+                        <p>Complete experimental apparatus and equipment arrangement</p>
+                    </div>
+                </div>
+
+                <!-- Image Item 2 -->
+                <div class="gallery-item image-item" data-type="image">
+                    <div class="media-container">
+                        <img class="gallery-image" src="img/WhatsApp Image 2026-01-22 at 10.09.59 AM.jpeg" alt="Soap Formation Results" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="zoom-icon">🔍</div>
+                        </div>
+                        <div class="media-type-badge">IMAGE</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Soap Formation Results</h4>
+                        <p>Final liquid soap product showing successful saponification</p>
+                    </div>
+                </div>
+
+                <!-- Placeholder for additional content -->
+                <div class="gallery-item placeholder-item">
+                    <div class="media-container">
+                        <div class="placeholder-content">
+                            <div class="placeholder-icon">📸</div>
+                            <p>More experimental<br>documentation<br>coming soon</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Future Documentation</h4>
+                        <p>Additional lab work and process optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-media">
+                <!-- Media content will be inserted here -->
+            </div>
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+        <div class="container">
+            <h2 class="section-title">Results & Observations</h2>
+            <div class="results-grid">
+                <div class="glass-card result-card">
+                    <div class="result-number" data-target="95">0</div>
+                    <h4>Success Rate</h4>
+                    <p>Percentage of successful soap formation</p>
+                </div>
+                <div class="glass-card result-card">
+                    <div class="result-number" data-target="9.5">0</div>
+                    <h4>Optimal pH</h4>
+                    <p>Ideal pH level for liquid soap</p>
+                </div>
+                <div class="glass-card result-card">
+                    <div class="result-number" data-target="45">0</div>
+                    <h4>Process Time</h4>
+                    <p>Minutes for complete saponification</p>
+                </div>
+                <div class="glass-card result-card">
+                    <div class="result-number" data-target="85">0</div>
+                    <h4>Efficiency</h4>
+                    <p>Overall process efficiency percentage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="section">
+        <div class="container">
+            <h2 class="section-title">Applications</h2>
+            <div class="applications-grid">
+                <div class="glass-card app-card">
+                    <div class="app-icon">🏠</div>
+                    <h4>Household Cleaning</h4>
+                    <p>Eco-friendly liquid soap for domestic use</p>
+                </div>
+                <div class="glass-card app-card">
+                    <div class="app-icon">🏭</div>
+                    <h4>Industrial Applications</h4>
+                    <p>Large-scale manufacturing processes</p>
+                </div>
+                <div class="glass-card app-card">
+                    <div class="app-icon">🌱</div>
+                    <h4>Sustainable Production</h4>
+                    <p>Environmentally conscious soap manufacturing</p>
+                </div>
+                <div class="glass-card app-card">
+                    <div class="app-icon">💼</div>
+                    <h4>Commercial Products</h4>
+                    <p>Premium liquid soap formulations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section id="safety" class="section">
+        <div class="container">
+            <h2 class="section-title">Safety Precautions</h2>
+            <div class="safety-grid">
+                <div class="glass-card safety-card warning">
+                    <div class="safety-icon">⚠️</div>
+                    <h4>Chemical Handling</h4>
+                    <p>Always wear protective equipment when handling KOH</p>
+                </div>
+                <div class="glass-card safety-card warning">
+                    <div class="safety-icon">🔥</div>
+                    <h4>Temperature Control</h4>
+                    <p>Monitor heating processes to prevent overheating</p>
+                </div>
+                <div class="glass-card safety-card warning">
+                    <div class="safety-icon">👁️</div>
+                    <h4>Eye Protection</h4>
+                    <p>Use safety goggles during all procedures</p>
+                </div>
+                <div class="glass-card safety-card warning">
+                    <div class="safety-icon">🌬️</div>
+                    <h4>Ventilation</h4>
+                    <p>Ensure adequate ventilation in laboratory</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="section">
+        <div class="container">
+            <h2 class="section-title">Conclusion & Future Scope</h2>
+            <div class="conclusion-content">
+                <div class="glass-card conclusion-card">
+                    <h3>Key Findings</h3>
+                    <p>The laboratory prototyping successfully demonstrated efficient liquid soap formation using KOH saponification. Optimal conditions were established for temperature, pH, and mixing ratios.</p>
+                </div>
+                <div class="glass-card conclusion-card">
+                    <h3>Future Research</h3>
+                    <p>Future work will focus on scaling the process, exploring alternative alkali sources, and developing automated control systems for industrial implementation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Research Team</h4>
+                    <p>Chemical Engineering Department</p>
+                    <p>Laboratory Prototyping Division</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Institution</h4>
+                    <p>Advanced Chemistry Research Lab</p>
+                    <p>Academic Year 2024-2025</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>chemlab@university.edu</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Liquid Soap Formation Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
