@@ -21,6 +21,7 @@
                 <li><a href="#process">Process</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#results">Results</a></li>
+                <li><a href="#team">Team</a></li>
             </ul>
         </div>
     </nav>
@@ -61,7 +62,7 @@
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">Project Overview</h2>
-            <div class="cards-grid">
+            <div class="about-cards-grid">
                 <div class="glass-card">
                     <div class="card-icon">🧪</div>
                     <h3>Problem Statement</h3>
@@ -70,7 +71,7 @@
                 <div class="glass-card">
                     <div class="card-icon">🎯</div>
                     <h3>Aim & Objectives</h3>
-                    <p>To develop an efficient liquid soap formation process using potassium hydroxide saponification, analyzing optimal conditions for industrial scalability.</p>
+                    <p>To develop an efficient liquid soap formation process using sodium hydroxide saponification, analyzing optimal conditions for industrial scalability.</p>
                 </div>
             </div>
         </div>
@@ -83,14 +84,14 @@
             <div class="theory-content">
                 <div class="glass-card theory-card">
                     <h3>Saponification Process</h3>
-                    <p>Saponification is the chemical reaction between fats/oils and a strong alkali (KOH) to produce soap and glycerol. The reaction follows:</p>
+                    <p>Saponification is the chemical reaction between fats/oils and a strong alkali (NaOH) to produce soap and glycerol. The reaction follows:</p>
                     <div class="chemical-equation">
-                        <span>Fat/Oil + KOH → Soap + Glycerol</span>
+                        <span>Fat/Oil + NaOH → Soap + Glycerol</span>
                     </div>
                 </div>
                 <div class="glass-card theory-card">
-                    <h3>Potassium Hydroxide Role</h3>
-                    <p>KOH acts as the saponifying agent, breaking ester bonds in triglycerides and forming potassium salts of fatty acids (liquid soap).</p>
+                    <h3>Sodium Hydroxide Role</h3>
+                    <p>NaOH acts as the saponifying agent, breaking ester bonds in triglycerides and forming sodium salts of fatty acids (liquid soap).</p>
                 </div>
             </div>
         </div>
@@ -108,7 +109,7 @@
                 </div>
                 <div class="glass-card material-card">
                     <div class="material-icon">⚗️</div>
-                    <h4>Potassium Hydroxide</h4>
+                    <h4>Sodium Hydroxide</h4>
                     <p>Strong alkali for soap formation</p>
                 </div>
                 <div class="glass-card material-card">
@@ -128,56 +129,63 @@
     <section id="process" class="section">
         <div class="container">
             <h2 class="section-title">Process Flow Diagram</h2>
-            <div class="process-flow">
-                <div class="flow-step" data-step="1">
-                    <div class="tank oil-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">Oil Storage</span>
+            <p class="process-subtitle">Complete soap formation process from raw materials to final product</p>
+            
+            <!-- Raw Materials Section -->
+            <div class="materials-section">
+                <h3 class="materials-title">Raw Materials & Reagents</h3>
+                <div class="materials-container">
+                    <div class="materials-row">
+                        <div class="material-item" data-step="1">
+                            <div class="material-container glycerol">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Glycerol<br>(5 ml)</span>
+                        </div>
+                        <div class="material-item" data-step="2">
+                            <div class="material-container oil">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Oil<br>(10 ml)</span>
+                        </div>
+                        <div class="material-item" data-step="3">
+                            <div class="material-container charcoal">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Charcoal</span>
+                        </div>
+                        <div class="material-item" data-step="4">
+                            <div class="material-container naoh">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Sodium Hydroxide (NaOH)<br>(3 ml)</span>
+                        </div>
                     </div>
-                    <div class="flow-arrow">→</div>
-                </div>
-                <div class="flow-step" data-step="2">
-                    <div class="tank koh-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">KOH Tank</span>
-                    </div>
-                    <div class="flow-arrow">→</div>
-                </div>
-                <div class="flow-step" data-step="3">
-                    <div class="tank mixing-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">Mixing Tank</span>
-                    </div>
-                    <div class="flow-arrow">→</div>
-                </div>
-                <div class="flow-step" data-step="4">
-                    <div class="tank gel-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">Gel Tank</span>
-                    </div>
-                    <div class="flow-arrow">→</div>
-                </div>
-                <div class="flow-step" data-step="5">
-                    <div class="tank dilution-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">Dilution Tank</span>
-                    </div>
-                    <div class="flow-arrow">→</div>
-                </div>
-                <div class="flow-step" data-step="6">
-                    <div class="tank ph-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">pH Tank</span>
-                    </div>
-                    <div class="flow-arrow">→</div>
-                </div>
-                <div class="flow-step" data-step="7">
-                    <div class="tank storage-tank">
-                        <div class="tank-content"></div>
-                        <span class="tank-label">Final Storage</span>
+                    
+                    <div class="materials-row">
+                        <div class="material-item" data-step="5">
+                            <div class="material-container aloe">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Aloe Vera Extracts<br>(5 ml)</span>
+                        </div>
+                        <div class="material-item" data-step="6">
+                            <div class="material-container water">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Distilled Water<br>(20 ml)</span>
+                        </div>
+                        <div class="material-item" data-step="7">
+                            <div class="material-container hcl">
+                                <div class="material-content"></div>
+                            </div>
+                            <span class="material-label">Hydrochloric Acid (HCl)<br>(5 ml)</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </section>
 
@@ -189,43 +197,50 @@
                 <div class="timeline-item">
                     <div class="timeline-marker">1</div>
                     <div class="timeline-content">
-                        <h4>Oil Preparation</h4>
-                        <p>Heat vegetable oil to 60°C in the oil storage tank</p>
+                        <h4>Material Preparation</h4>
+                        <p>Measure and prepare all raw materials: Glycerol (5ml), Oil (10ml), Charcoal, NaOH (3ml), Aloe Vera Extracts (5ml), Distilled Water (20ml), and HCl (5ml)</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker">2</div>
                     <div class="timeline-content">
-                        <h4>KOH Solution</h4>
-                        <p>Prepare 30% KOH solution in distilled water</p>
+                        <h4>NaOH Solution Preparation</h4>
+                        <p>Prepare sodium hydroxide solution and heat the oil and glycerol mixture to optimal temperature for initial reaction</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker">3</div>
                     <div class="timeline-content">
-                        <h4>Mixing Process</h4>
-                        <p>Slowly add KOH solution to heated oil with continuous stirring</p>
+                        <h4>Saponification Process</h4>
+                        <p>Add NaOH solution to the heated oil mixture with continuous stirring to initiate saponification reaction</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker">4</div>
                     <div class="timeline-content">
-                        <h4>Gel Formation</h4>
-                        <p>Allow mixture to form gel consistency (30-45 minutes)</p>
+                        <h4>Filtering Process</h4>
+                        <p>Filter the heated mixture using charcoal to remove impurities and achieve clarity</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker">5</div>
                     <div class="timeline-content">
-                        <h4>Dilution</h4>
-                        <p>Add hot water gradually to achieve desired consistency</p>
+                        <h4>Raw Soap Formation</h4>
+                        <p>Allow the filtered mixture to form raw soap through natural cooling and chemical reaction completion</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker">6</div>
                     <div class="timeline-content">
-                        <h4>pH Adjustment</h4>
-                        <p>Test and adjust pH to 9-10 using citric acid if needed</p>
+                        <h4>Drying Process</h4>
+                        <p>Dry the raw soap to remove excess moisture and achieve desired consistency</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">7</div>
+                    <div class="timeline-content">
+                        <h4>Final Product</h4>
+                        <p>Obtain the final liquid soap product with enhanced properties from aloe vera extracts</p>
                     </div>
                 </div>
             </div>
@@ -253,7 +268,7 @@
                     </div>
                     <div class="gallery-caption">
                         <h4>Saponification Process</h4>
-                        <p>Real-time mixing of KOH solution with vegetable oil</p>
+                        <p>Real-time mixing of NaOH solution with vegetable oil</p>
                     </div>
                 </div>
 
@@ -422,28 +437,192 @@
         </div>
     </section>
 
+    <!-- Team Members Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Team</h2>
+            <p class="team-subtitle">Meet the dedicated researchers behind this innovative project</p>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-initials">KD</span>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Krushna Donge</h3>
+                        <p class="team-role">Lead Researcher & Project Coordinator</p>
+                        <p class="team-department">Chemical Engineering Department</p>
+                        <div class="team-details">
+                            <div class="detail-row">
+                                <span class="detail-label">PRN:</span>
+                                <span class="detail-value">20240104225</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Roll No:</span>
+                                <span class="detail-value">133</span>
+                            </div>
+                        </div>
+                        <div class="team-expertise">
+                            <span class="expertise-tag">Lead Researcher</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:202401040225@mitaoe.ac.in" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                202401040225@mitaoe.ac.in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-initials">AV</span>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Aniket Vishe</h3>
+                        <p class="team-role">Research Associate</p>
+                        <p class="team-department">Chemical Engineering Department</p>
+                        <div class="team-details">
+                            <div class="detail-row">
+                                <span class="detail-label">PRN:</span>
+                                <span class="detail-value">20240104216</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Roll No:</span>
+                                <span class="detail-value">130</span>
+                            </div>
+                        </div>
+                        <div class="team-expertise">
+                            <span class="expertise-tag">Research Associate</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:20240104216@mitaoe.ac.in" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                20240104216@mitaoe.ac.in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-initials">SP</span>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Swapnil Patil</h3>
+                        <p class="team-role">Laboratory Specialist</p>
+                        <p class="team-department">Chemical Engineering Department</p>
+                        <div class="team-details">
+                            <div class="detail-row">
+                                <span class="detail-label">PRN:</span>
+                                <span class="detail-value">20240104194</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Roll No:</span>
+                                <span class="detail-value">115</span>
+                            </div>
+                        </div>
+                        <div class="team-expertise">
+                            <span class="expertise-tag">Laboratory Specialist</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:20240104194@mitaoe.ac.in" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                20240104194@mitaoe.ac.in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-initials">SS</span>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sahil Shaikh</h3>
+                        <p class="team-role">Research Assistant</p>
+                        <p class="team-department">Chemical Engineering Department</p>
+                        <div class="team-details">
+                            <div class="detail-row">
+                                <span class="detail-label">PRN:</span>
+                                <span class="detail-value">20240104208</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Roll No:</span>
+                                <span class="detail-value">126</span>
+                            </div>
+                        </div>
+                        <div class="team-expertise">
+                            <span class="expertise-tag">Research Assistant</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:20240104208@mitaoe.ac.in" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                20240104208@mitaoe.ac.in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institution Info -->
+            <div class="institution-info">
+                <div class="glass-card institution-card">
+                    <div class="institution-icon">🏛️</div>
+                    <h3>MIT Academy of Engineering, Pune</h3>
+                    <p>Department of Computer Engineering</p>
+                    <p>University of Technology & Science</p>
+                    <div class="institution-details">
+                        
+                    
+                        <div class="detail-item">
+                            <span class="detail-icon">🌐</span>
+                            <span>www.mitaoe.ac.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Research Team</h4>
-                    <p>Chemical Engineering Department</p>
+                    <p>Computer Engineering Department</p>
                     <p>Laboratory Prototyping Division</p>
                 </div>
                 <div class="footer-section">
                     <h4>Institution</h4>
                     <p>Advanced Chemistry Research Lab</p>
-                    <p>Academic Year 2024-2025</p>
+                    <p>Academic Year 2025-2026</p>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>chemlab@university.edu</p>
-                    <p>+1 (555) 123-4567</p>
+                    <p>202401040225@mitaoe.ac.in</p>
+                    <p>8668587920</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Liquid Soap Formation Research. All rights reserved.</p>
+                <p>&copy; 2026 Liquid Soap Formation Research. All rights reserved.</p>
             </div>
         </div>
     </footer>

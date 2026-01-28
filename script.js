@@ -659,6 +659,134 @@ class GalleryEffects {
     }
 }
 
+// Team Section Animations
+class TeamAnimations {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.animateTeamStats();
+        this.addTeamCardEffects();
+        this.observeTeamSection();
+    }
+
+    animateTeamStats() {
+        const statNumbers = document.querySelectorAll('.team-stats .stat-number');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    this.animateCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        statNumbers.forEach(stat => observer.observe(stat));
+    }
+
+    animateCounter(element) {
+        const target = parseInt(element.dataset.target);
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            element.textContent = Math.floor(current);
+        }, 16);
+    }
+
+    addTeamCardEffects() {
+        const teamCards = document.querySelectorAll('.team-card');
+        
+        teamCards.forEach(card => {
+            // Add hover glow effect
+            card.addEventListener('mouseenter', () => {
+                const avatar = card.querySelector('.avatar-glow');
+                if (avatar) {
+                    avatar.style.opacity = '0.6';
+                }
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const avatar = card.querySelector('.avatar-glow');
+                if (avatar) {
+                    avatar.style.opacity = '0';
+                }
+            });
+
+            // Add click effect for contact links
+            const contactLink = card.querySelector('.contact-link');
+            if (contactLink) {
+                contactLink.addEventListener('click', (e) => {
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(0, 255, 255, 0.6)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.left = '50%';
+                    ripple.style.top = '50%';
+                    ripple.style.width = '20px';
+                    ripple.style.height = '20px';
+                    ripple.style.marginLeft = '-10px';
+                    ripple.style.marginTop = '-10px';
+                    
+                    contactLink.style.position = 'relative';
+                    contactLink.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            }
+        });
+    }
+
+    observeTeamSection() {
+        const teamSection = document.querySelector('#team');
+        
+        if (teamSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Trigger staggered animation for team cards
+                        const cards = entry.target.querySelectorAll('.team-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, index * 150);
+                        });
+                        
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(teamSection);
+        }
+    }
+}
+
+// Add ripple animation CSS
+const rippleStyle = document.createElement('style');
+rippleStyle.textContent = `
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(rippleStyle);
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new BackgroundAnimation();
@@ -671,6 +799,9 @@ document.addEventListener('DOMContentLoaded', () => {
     new ExperimentGallery();
     new GalleryLoader();
     new GalleryEffects();
+    
+    // Initialize Team Section
+    new TeamAnimations();
 
     // Add loading animation
     document.body.style.opacity = '0';
